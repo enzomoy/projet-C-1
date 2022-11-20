@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/enzom/OneDrive/Documents/ESGI/Dev C/Programme/exercice_5
+# Install script for directory: C:/Users/enzom/OneDrive/Documents/Projet C/exercice_5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/enzom/OneDrive/Documents/ESGI/Dev C/Programme/exercice_5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/enzom/OneDrive/Documents/Projet C/exercice_5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

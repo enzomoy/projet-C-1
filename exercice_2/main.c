@@ -29,6 +29,7 @@ int main(int argc, char **argv) {
 
     do {
 
+        // Menu principal
         do {
             printf("\n-----------------------------");
             printf("\n1 - Selection des valeurs");
@@ -45,9 +46,9 @@ int main(int argc, char **argv) {
         if (menuChoice == 1) {
 
             printf("\nEntrez la valeur de n (entiere) :");
-            (int)scanf("%d", &n);
+            scanf("%d", &n);
             printf("\nEntrez la valeur de m (entiere) :");
-            (int)scanf("%d", &m);
+            scanf("%d", &m);
         }
 
         // Faire le calcul
@@ -84,6 +85,7 @@ int main(int argc, char **argv) {
 
         }
 
+        // Afficher le résultat
         if (menuChoice == 3) {
             printf("\n---------------");
             printf("\nLe resultat est : %d", result);

@@ -82,6 +82,7 @@ int main(int argc, char **argv) {
         else verifStartOne = 1;
         j++;
     }
+
     // JE DOIS CALCULER LES 1 DU DEBUT VOIR GRAPH
 
     printf("%d %f", addedZero, binaryNumber);
