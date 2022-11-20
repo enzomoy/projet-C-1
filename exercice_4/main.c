@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
     } while (workWithWhichNumber < 1 || workWithWhichNumber > 2);
 
     int binaryNumber = 0;
-    unsigned long long binaryCounter = 0;
+    int binaryCounter = 0;
     char byte = 0;
     int firstOne = 0;
     int allZero = 0;
@@ -61,6 +61,7 @@ int main(int argc, char **argv) {
             verifZero = 1; // Bloque les futurs lastZero
         }
 
+
         binaryCounter++;
         binaryNumber += (decimalNumber % 2) * (int)pow(10, i);
         decimalNumber /= 2;
@@ -77,13 +78,13 @@ int main(int argc, char **argv) {
 
     // Récupérer les 1 avant le premier bit à 0.
     while (verifStartOne == 0) {
-        if (binaryNumber / (int)pow(10,((byte * 8) - j)) % 2 == 1) firstOne++;
-         else verifStartOne = 1;
+        if ((int) binaryNumber / (int) pow(10, ((byte * 8) - j)) % 2 == 1) firstOne++;
+        else verifStartOne = 1;
         j++;
     }
     // JE DOIS CALCULER LES 1 DU DEBUT VOIR GRAPH
 
-    printf("%d", binaryNumber);
+    printf("%d %f", addedZero, binaryNumber);
 
     if (workWithWhichNumber == 1) { // L'utilisateur souhaite voir les 0).
         printf("\n----------------------");
@@ -103,8 +104,6 @@ int main(int argc, char **argv) {
         printf("\nEn partant de la droite, le nombre de 1 avant le premier 0 est : %d", lastOne);
         printf("\nEn partant de la droite, le nombre de 1 avant le dernier 0 est : %d", allOne - firstOne);
         printf("\n----------------------");
-
-
     }
 
     return EXIT_SUCCESS;
