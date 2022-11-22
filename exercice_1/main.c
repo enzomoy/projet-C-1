@@ -1,4 +1,4 @@
-/*AUTEUR:Yang Lucien
+/*AUTEUR: Yang Lucien, Moy Enzo, Smahat Hamza
  *DATE DEBUT:13/11/2022
  * DATE FIN:20/11/2022
  * OBJECTIF: construction une arche
@@ -9,7 +9,7 @@
 
 int main(int argc,char ** argv){
 
-    int i,y,space_between,answer;
+    int space_left,space_between,answer;
     int nb_space=0;
 
     do {
@@ -26,9 +26,11 @@ int main(int argc,char ** argv){
 //------------------ nb de tour ------------------
 
         if (answer==1){
-            printf("Combien de ligne :");
-            scanf("%d",&nb_space);
-            nb_space+=9;
+            do {
+                printf("Combien de tour :");
+                scanf("%d",&nb_space);
+                nb_space+=9;
+            }while ( nb_space - 9 < 0 && nb_space - 9 > 60);
         }
 
 //------------------ affiche l'arche ------------------
@@ -76,13 +78,13 @@ int main(int argc,char ** argv){
 //------------------ l'arche de taille 5 et 6 ------------------
 
                             if (nb_space>13) {
-                                y = 8;
+                                space_left = 8;
                                 space_between = 18;
                                 for (int x = 0; x < 2; ++x) {
                                     if (nb_space == 14) {
                                         x++;
                                     }
-                                    for (int i = 0; i < nb_space - y; ++i) {
+                                    for (int i = 0; i < nb_space - space_left; ++i) {
                                         printf(" ");
                                     }
                                     printf("*****");
@@ -90,7 +92,7 @@ int main(int argc,char ** argv){
                                         printf(" ");
                                     }
                                     printf("*****\n");
-                                    y++;
+                                    space_left++;
                                     space_between = space_between + 2;
                                 }
 
@@ -109,10 +111,10 @@ int main(int argc,char ** argv){
 //------------------ l'arche de taille 8,9,...,n ------------------
 
                                     space_between=26;
-                                    y=11;
+                                    space_left=11;
                                     if (nb_space>16){
                                         for (int x = 0; x <= nb_space - 17; ++x) {
-                                            for (int i = 0; i < nb_space - y; ++i) {
+                                            for (int i = 0; i < nb_space - space_left; ++i) {
                                                 printf(" ");
                                             }
                                             printf("****");
@@ -121,7 +123,7 @@ int main(int argc,char ** argv){
                                             }
                                             printf("****\n");
                                             if (x + 1 < nb_space - 17) {
-                                                for (int x = 0; x < nb_space - y; ++x) {
+                                                for (int x = 0; x < nb_space - space_left; ++x) {
                                                     printf(" ");
                                                 }
                                                 printf("****");
@@ -130,7 +132,7 @@ int main(int argc,char ** argv){
                                                 }
                                                 printf("****\n");
                                                 space_between += 2;
-                                                y++;
+                                                space_left++;
                                                 x++;
                                             }
                                         }

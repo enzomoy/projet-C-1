@@ -1,7 +1,7 @@
 /*
- * Auteur : E.Moy
+ * Auteur : Yang Lucien, Moy Enzo, Smahat Hamza
  *
- * Date : 10/11/2022
+ * Date : 21/11/2022
  *
  * Description : Construire un programme C permettant de supprimer (dans l'ordre) les chiffres d'un nombre n dans
 un nombre m.

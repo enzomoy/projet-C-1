@@ -1,3 +1,0 @@
-C:/Users/enzom/OneDrive/Documents/Projet C/exercice_6/cmake-build-debug/CMakeFiles/exercice_6.dir
-C:/Users/enzom/OneDrive/Documents/Projet C/exercice_6/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/enzom/OneDrive/Documents/Projet C/exercice_6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

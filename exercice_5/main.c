@@ -1,11 +1,12 @@
-#include <stdio.h>
 
-/* AUTEUR: Lucien Yang
+/* AUTEUR: Yang Lucien, Moy Enzo, Smahat Hamza
  * DATE DEBUT:17/11/2022
- * DATE FIN:??/11/2022
+ * DATE FIN:21/11/2022
  * OBJECTIF:faire un systeme de reduction automatique
  * pour l'entreprise ouibus
  */
+
+#include <stdio.h>
 
 
 int main(int argc, char ** argv){

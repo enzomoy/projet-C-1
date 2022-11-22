@@ -1,5 +1,5 @@
 /*
-Auteur: Hamza SMAHAT
+Auteur: Yang Lucien, Moy Enzo, Smahat Hamza
 Date: 19/11/2022
 Objectif: l'objectif de cette exercice et de trouver les puissances pour calculer un nombre exemple 135 = 1^1 + 3^2 + 5^3 ou 2537 = 2^1+3^2+5^3+7^4.
 */
