@@ -90,6 +90,7 @@ int main(int argc, char **argv) {
 
                 binaryCounter++;
                 binaryNumber += (decimalNumber % 2) * (int)pow(10, i);
+
                 decimalNumber /= 2;
                 i++;
             }

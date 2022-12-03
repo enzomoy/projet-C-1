@@ -58,6 +58,8 @@ int main(int argc, char **argv) {
             // Récupération de la longueur de m
             mSave = m;
             result = 0;
+            i = 0;
+            lenght = 0;
 
             if (m == 0) lenght = 1;
 

@@ -75,8 +75,7 @@ int main(int argc, char **argv) {
                     }
                 }
 
-                nbsortie += (number1 % (max * 10) / max) *
-                            pow(10, num1);//permet d'ajouter le plus grand chiffre à gauche du nombre par odre croissant
+                nbsortie += (number1 % (max * 10) / max) * pow(10, num1);//permet d'ajouter le plus grand chiffre à gauche du nombre par odre croissant
                 number1 = number1 % max + (number1 / (max * 10)) * max; //permet de supprimer le chiffre le plus grand
             }
             number1 = nbsortie;
